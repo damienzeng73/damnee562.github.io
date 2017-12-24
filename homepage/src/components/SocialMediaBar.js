@@ -5,7 +5,7 @@ import './SocialMediaBar.css'
 
 const SocialMediaBar = () => {
     return (
-        <Container id='social-media-bar'>
+        <Container id='social-media-bar' fluid>
             <a href='https://www.facebook.com/profile.php?id=100003107661326' target='_blank' rel='noopener noreferrer'>
                 <Button circular color='facebook' icon='facebook f' />
             </a>

@@ -1,10 +1,12 @@
 import React from 'react'
-import { Header, Breadcrumb } from 'semantic-ui-react'
+import { Container, Header, Breadcrumb } from 'semantic-ui-react'
+
+import './Info.css'
 
 const Info = () => {
     return (
-        <div>
-            <Header>Damien Zeng</Header>
+        <Container id='info' fluid>
+            <Header as='h1'>Damien Zeng</Header>
             <Breadcrumb>
                 <Breadcrumb.Section>Blog</Breadcrumb.Section>
                 <Breadcrumb.Divider />
@@ -12,7 +14,7 @@ const Info = () => {
                 <Breadcrumb.Divider />
                 <Breadcrumb.Section>Portfolio</Breadcrumb.Section>
             </Breadcrumb>
-        </div>
+        </Container>
     )
 }
 
