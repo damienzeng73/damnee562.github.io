@@ -1,0 +1,14 @@
+#main {
+    height: 100vh;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    .info-section {
+        .info-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+    }
+}
