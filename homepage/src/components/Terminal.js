@@ -6,7 +6,11 @@ import './Terminal.css'
 const Terminal = () => {
     return (
         <Container id='terminal' fluid>
-            <h1>Content</h1>
+            <span className='machine'>damien@damien-MS-7982</span>
+            <span className='colon'>:</span>
+            <span className='path'>~</span>
+            <span className='dollar'>$ </span>
+            <span className='cursor'></span>
         </Container>
     )
 }

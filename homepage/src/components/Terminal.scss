@@ -1,4 +1,49 @@
 #terminal {
-//    color: rgb(253, 253, 253);
-//    background-color: rgb(48, 10, 36);
+    padding: 1em;
+    color: #fff;
+    font-family: 'Ubuntu Mono', monospace;
+
+    .machine {
+        color: rgb(138, 226, 52);
+    }
+
+    .path {
+        color: rgb(79, 104, 171);
+    }
+
+    .cursor {
+        background-color: #fff;
+        animation: flash 1.2s infinite;
+
+        &:after {
+            content: '_';
+        }
+    }
+}
+
+
+@keyframes flash {
+    0% {
+        opacity: 0;
+    }
+     
+    20% {
+        opacity: 1;
+    }
+     
+    40% {
+        opacity: 1;
+    }
+     
+    60% {
+        opacity: 1;
+    }
+     
+    80% {
+        opacity: 0;
+    }
+     
+    100% {
+        opacity: 0;
+    }
 }

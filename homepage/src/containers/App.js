@@ -21,7 +21,9 @@ class App extends React.Component {
                     </Grid.Column>
 
                     <Grid.Column className='terminal-section' width={10}>
-                        <Terminal />
+                        <div className='terminal-wrapper'>
+                            <Terminal />
+                        </div>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
