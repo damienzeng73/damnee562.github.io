@@ -17,13 +17,13 @@
         width: 6em;
         overflow: hidden;
         white-space: nowrap;
-        animation: type 1.3s steps(60, end);
+        animation: type 1.5s steps(20, end);
     }
 
     .cursor {
         margin-left: 6em;
         background-color: #fff;
-        animation: flash 1.2s infinite, move 1.3s steps(60, end);
+        animation: flash 1.2s infinite, move 1.5s steps(20, end);
 
         &:after {
             content: '_';
