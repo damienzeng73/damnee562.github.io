@@ -29,6 +29,23 @@
             content: '_';
         }
     }
+
+    .profile {
+        visibility: hidden;
+        margin-top: 3em;
+        animation: 1.7s show;
+        animation-fill-mode: forwards;
+
+        .header {
+            color: inherit;
+            font-family: inherit;
+        }
+
+        p {
+            font-size: 1.2em;
+            text-indent: 2em;
+        }
+    }
 }
 
 
@@ -67,5 +84,15 @@
 @keyframes move {
     from {
         margin-left: 0;
+    }
+}
+
+@keyframes show {
+    99% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
     }
 }

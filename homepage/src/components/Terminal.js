@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from 'semantic-ui-react'
+import { Container, Header } from 'semantic-ui-react'
 
 import './Terminal.css'
 
@@ -12,6 +12,15 @@ const Terminal = () => {
             <span className='dollar'>$ </span>
             <span className='command'>echo profile</span>
             <span className='cursor'></span>
+
+            <div className='profile'>
+                <Header as='h2'>Damien's profile</Header>
+                <Header as='h3'>Name</Header>
+                <p>Damien Zeng</p>
+
+                <Header as='h3'>Email</Header>
+                <p>damnee562@gmail.com</p>
+            </div>
         </Container>
     )
 }
