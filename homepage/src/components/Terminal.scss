@@ -1,4 +1,5 @@
 #terminal {
+    position: relative;
     padding: 1em;
     color: #fff;
     font-family: 'Ubuntu Mono', monospace;
@@ -11,9 +12,18 @@
         color: rgb(79, 104, 171);
     }
 
+    .command {
+        position: absolute;
+        width: 6em;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: type 1.3s steps(60, end);
+    }
+
     .cursor {
+        margin-left: 6em;
         background-color: #fff;
-        animation: flash 1.2s infinite;
+        animation: flash 1.2s infinite, move 1.3s steps(60, end);
 
         &:after {
             content: '_';
@@ -21,6 +31,12 @@
     }
 }
 
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
 
 @keyframes flash {
     0% {
@@ -45,5 +61,11 @@
      
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes move {
+    from {
+        margin-left: 0;
     }
 }

@@ -10,6 +10,7 @@ const Terminal = () => {
             <span className='colon'>:</span>
             <span className='path'>~</span>
             <span className='dollar'>$ </span>
+            <span className='command'>echo profile</span>
             <span className='cursor'></span>
         </Container>
     )
