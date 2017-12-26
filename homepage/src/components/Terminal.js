@@ -20,6 +20,17 @@ const Terminal = () => {
 
                 <Header as='h3'>Email</Header>
                 <p>damnee562@gmail.com</p>
+
+                <Header as='h3'>Skills</Header>
+                <p>[Programming Languages] - Python, JavaScript</p>
+                <p>[Frontend Frameworks] - React</p>
+                <p>[Backend Frameworks] - Django, Flask</p>
+                <p>[Databases] - MySQL, PostgreSQL, sqlite3, MongoDB</p>
+                <p>[VCS] - Git</p>
+                <p>[Others] - Linux</p>
+
+                <Header as='h3'>Experiences</Header>
+                <p>-</p>
             </div>
         </Container>
     )
