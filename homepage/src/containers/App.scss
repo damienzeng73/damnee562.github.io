@@ -1,23 +1,27 @@
-#main {
-    height: 100vh;
-    margin-top: 0;
-    margin-bottom: 0;
+#main-wrapper {
     background-color: #d9d9d9;
 
-    .intro-section {
-        .intro-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-        }
-    }
+    #main {
+        height: 100vh;
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: #F1F4F6;
 
-    .terminal-section {
-        .terminal-wrapper {
-            height: 100%;
-            color: rgb(253, 253, 253);
-            background-color: rgb(48, 10, 36);
+        .intro-section {
+            .intro-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+            }
+        }
+
+        .terminal-section {
+            .terminal-wrapper {
+                height: 100%;
+                color: rgb(253, 253, 253);
+                background-color: rgb(48, 10, 36);
+            }
         }
     }
 }
