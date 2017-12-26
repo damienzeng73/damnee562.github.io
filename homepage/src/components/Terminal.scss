@@ -63,6 +63,14 @@
                 transform: scaleX(1);
             }
         }
+
+        a {
+            color: #fff;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 

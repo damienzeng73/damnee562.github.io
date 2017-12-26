@@ -19,7 +19,9 @@ const Terminal = () => {
                 <p>Damien Zeng</p>
 
                 <Header as='h3'>Email</Header>
-                <p>damnee562@gmail.com</p>
+                <a href='mailto:damnee562@gmail.com'>
+                    <p>damnee562@gmail.com</p>
+                </a>
 
                 <Header as='h3'>Skills</Header>
                 <p>[Programming Languages] - Python, JavaScript</p>
