@@ -2,7 +2,7 @@ import React from 'react'
 import { Grid } from 'semantic-ui-react'
 
 import './App.css'
-import Info from '../components/Info'
+import Intro from '../components/Intro'
 import SocialMediaBar from '../components/SocialMediaBar'
 import Terminal from '../components/Terminal'
 
@@ -11,10 +11,10 @@ class App extends React.Component {
         return (
             <Grid id='main' columns={2} divided>
                 <Grid.Row>
-                    <Grid.Column className='info-section' width={6}>
-                        <div className='info-wrapper'>
-                            <div className='info'>
-                                <Info />
+                    <Grid.Column className='intro-section' width={6}>
+                        <div className='intro-wrapper'>
+                            <div>
+                                <Intro />
                                 <SocialMediaBar />
                             </div>
                         </div>

@@ -1,11 +1,11 @@
 import React from 'react'
 import { Container, Header, Breadcrumb } from 'semantic-ui-react'
 
-import './Info.css'
+import './Intro.css'
 
-const Info = () => {
+const Intro = () => {
     return (
-        <Container id='info' fluid>
+        <Container id='intro' fluid>
             <Header as='h1'>Damien Zeng</Header>
             <Breadcrumb size='large'>
                 <Breadcrumb.Section link>Blog</Breadcrumb.Section>
@@ -19,4 +19,4 @@ const Info = () => {
 }
 
 
-export default Info
+export default Intro
