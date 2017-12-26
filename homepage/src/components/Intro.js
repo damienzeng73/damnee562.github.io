@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Header, Breadcrumb } from 'semantic-ui-react'
+import { Container, Header, Breadcrumb, Divider } from 'semantic-ui-react'
 
 import './Intro.css'
 
@@ -14,6 +14,10 @@ const Intro = () => {
                 <Breadcrumb.Divider />
                 <Breadcrumb.Section link>Portfolio</Breadcrumb.Section>
             </Breadcrumb>
+
+            <Divider />
+
+            <p>I'm a full-stack developer from Taiwan.</p>
         </Container>
     )
 }
