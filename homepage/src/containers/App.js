@@ -78,7 +78,12 @@ class App extends React.Component {
                                 distance: 150,
                                 color: '#fff',
                                 opacity: 0.4,
-                                width: 1
+                                width: 1,
+                                shadow: {
+                                    enable: true,
+                                    color: '#3CA9D1',
+                                    blur: 5
+                                }
                             },
                             move: {
                                 enable: true,
