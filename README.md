@@ -1,7 +1,7 @@
 # damnee562.github.io
 My personal website.
 
-View [here](https://damnee562.github.io/).
+Visit [here](https://damnee562.github.io/).
 
 ## Built With
 * [React](https://facebook.github.io/react/) - A JavaScript library for building UI
