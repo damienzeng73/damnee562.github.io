@@ -17,7 +17,9 @@ const Intro = () => {
 
             <Divider />
 
-            <p>I'm a passionate full stack developer graduated from Yuan Ze University, familiar with Python and JavaScript programming language.</p>
+            <Container>
+                <p>I'm a passionate full stack developer graduated from Yuan Ze University, familiar with Python and JavaScript programming language.</p>
+            </Container>
         </Container>
     )
 }
