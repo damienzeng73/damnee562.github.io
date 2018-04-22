@@ -10,9 +10,11 @@ const Intro = () => {
             <Breadcrumb size='large'>
                 <Breadcrumb.Section link>Blog</Breadcrumb.Section>
                 <Breadcrumb.Divider />
-                <Breadcrumb.Section link>Resume</Breadcrumb.Section>
-                <Breadcrumb.Divider />
                 <Breadcrumb.Section link>Portfolio</Breadcrumb.Section>
+                <Breadcrumb.Divider />
+                <Breadcrumb.Section>
+                    <a href='https://drive.google.com/file/d/1HCUdRR2CGXJtusSHPzwOOTRGSA0s97Py/view?usp=sharing' target='_blank'>Resume</a>
+                </Breadcrumb.Section>
             </Breadcrumb>
 
             <Divider />
