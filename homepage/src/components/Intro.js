@@ -17,12 +17,12 @@ const Intro = () => {
 
             <Divider />
 
-            {`<pre>
+            <pre>{`
               I'm a passionate web developer
             graduated from Yuan Ze University,
             familiar with Python and JavaScript
             programming language.
-            </pre>`}
+            `}</pre>
         </Container>
     )
 }
