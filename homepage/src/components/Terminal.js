@@ -32,7 +32,8 @@ const Terminal = () => {
                 <p>[Others] - Linux</p>
 
                 <Header as='h3'>Experiences</Header>
-                <p>-</p>
+                <span><strong>JAN 2016 - JUL 2017</strong></span>
+                <p>Genomic Medicine Core Laboratory, Linkou Chang Gung Memorial Hospital — Research Assistant(Internship)</p>
             </div>
         </Container>
     )
