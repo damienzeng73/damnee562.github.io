@@ -24,10 +24,10 @@ const Terminal = () => {
                 </a>
 
                 <Header as='h3'>Skills</Header>
-                <p>[Programming Languages] - Python, JavaScript</p>
-                <p>[Frontend Frameworks] - React</p>
-                <p>[Backend Frameworks] - Django, Flask</p>
-                <p>[Databases] - MySQL, PostgreSQL, sqlite3, MongoDB</p>
+                <p>[Programming Language] - Python, JavaScript</p>
+                <p>[Frontend Framework] - React</p>
+                <p>[Backend Framework] - Django, Flask</p>
+                <p>[Database] - MySQL, PostgreSQL, sqlite3, MongoDB</p>
                 <p>[VCS] - Git</p>
                 <p>[Others] - Linux</p>
 
