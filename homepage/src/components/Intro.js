@@ -13,7 +13,7 @@ const Intro = () => {
                 <Breadcrumb.Section link>Portfolio</Breadcrumb.Section>
                 <Breadcrumb.Divider />
                 <Breadcrumb.Section>
-                    <a href='https://drive.google.com/file/d/1v5KWkE_j5_8ffyuKT1mAX0hhbu8-KIzJ/view?usp=sharing' target='_blank' rel='noopener noreferrer'>Resume</a>
+                    <a href='https://drive.google.com/file/d/1H5RMRjwAet3_QN03WIgR2ht4g4lvRHkp/view?usp=sharing' target='_blank' rel='noopener noreferrer'>Resume</a>
                 </Breadcrumb.Section>
             </Breadcrumb>
 
