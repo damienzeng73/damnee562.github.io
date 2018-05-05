@@ -9,7 +9,7 @@ const Intro = () => {
             <Header as='h1'>Damien Zeng</Header>
             <Breadcrumb size='large'>
                 <Breadcrumb.Section>
-                    <a href='https://damnee562.github.io/blog' target='_blank' rel='noopener noreferrer'>Blog</a>
+                    <a href='https://damien-blog.herokuapp.com/' rel='noopener noreferrer'>Blog</a>
                 </Breadcrumb.Section>
                 <Breadcrumb.Divider />
                 <Breadcrumb.Section link>Portfolio</Breadcrumb.Section>
