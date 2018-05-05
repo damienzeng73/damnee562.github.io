@@ -8,7 +8,9 @@ const Intro = () => {
         <Container id='intro' fluid>
             <Header as='h1'>Damien Zeng</Header>
             <Breadcrumb size='large'>
-                <Breadcrumb.Section link>Blog</Breadcrumb.Section>
+                <Breadcrumb.Section>
+                    <a href='https://damnee562.github.io/blog' target='_blank' rel='noopener noreferrer'>Blog</a>
+                </Breadcrumb.Section>
                 <Breadcrumb.Divider />
                 <Breadcrumb.Section link>Portfolio</Breadcrumb.Section>
                 <Breadcrumb.Divider />
