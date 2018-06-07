@@ -21,10 +21,8 @@ const Intro = () => {
 
             <Divider />
 
-            <pre>{`  I'm a passionate web developer
-graduated from Yuan Ze University,
-familiar with Python and JavaScript
-programming languages.`}</pre>
+            <pre>{`  A passionate web developer in Taiwan
+who love Python & JavaScript.`}</pre>
         </Container>
     )
 }

@@ -28,12 +28,15 @@ const Terminal = () => {
                 <p>[Frontend Framework] - React</p>
                 <p>[Backend Framework] - Django, Flask</p>
                 <p>[Database] - MySQL, PostgreSQL, sqlite3, MongoDB</p>
-                <p>[VCS] - Git</p>
+                <p>[VCS] - Git, Mercurial</p>
                 <p>[Others] - Linux</p>
 
                 <Header as='h3'>Experiences</Header>
                 <span><strong>JAN 2016 - JUL 2017</strong></span>
                 <p>Genomic Medicine Core Laboratory, Linkou Chang Gung Memorial Hospital — Research Assistant(Internship)</p>
+
+                <span><strong>JUN 2018 -</strong></span>
+                <p>Omniscient Cloud Technologies, INC. — Software Engineer</p>
             </div>
         </Container>
     )
