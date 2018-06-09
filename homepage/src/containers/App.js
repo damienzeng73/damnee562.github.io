@@ -1,9 +1,14 @@
 import React from 'react'
+import { Container } from 'semantic-ui-react'
+
+import Navbar from '../components/Navbar'
 
 class App extends React.Component {
     render() {
         return (
-            <h1>Hello</h1>
+            <Container fluid>
+                <Navbar />
+            </Container>
         )
     }
 }

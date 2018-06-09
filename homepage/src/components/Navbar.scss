@@ -1,0 +1,46 @@
+#navbar {
+    .header {
+        justify-content: space-between;
+
+        a.icon {
+            color: #000;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            @media only screen and (min-width: 768px) {
+                display: none;
+            }
+        }
+    }
+
+    .stackable.menu {
+        padding: .7em;
+        transition: padding 0.4s linear;
+
+        @media only screen and (min-width: 768px) {
+            padding: 2em;
+        }
+
+        .header {
+            padding: 0;
+        }
+    }
+
+    .stackable.small-nav.menu {
+        padding: 0;
+    }
+
+    .stackable.menu .right.menu {
+        display: none;
+
+        @media only screen and (min-width: 768px) {
+            display: flex;
+        }
+    }
+
+    .stackable.mobile.menu .right.menu {
+        display: flex;
+    }
+}
