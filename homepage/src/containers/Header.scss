@@ -2,4 +2,65 @@
     background: url('../assets/bg.jpg') no-repeat center;
     background-size: cover;
     height: 100vh;
+
+    a.scroll {
+        position: absolute;
+        bottom: 3.5rem;
+        left: 50%;
+        z-index: 2;
+        display: inline-block;
+        transform: translate(-50%, -50%);
+        transition: opacity .3s;
+        font-size: 1.5rem;
+        color: #000;
+
+        &:hover {
+            opacity: .5;
+            cursor: pointer;
+        }
+    }
+
+    span.scroll-icon {
+        position: absolute;
+        left: 50%;
+        bottom: 4rem;
+        width: 24px;
+        height: 24px;
+        margin-left: -12px;
+        border-left: 2px solid #000;
+        border-bottom: 2px solid #000;
+        transform: rotate(-45deg);
+        animation: scrollDown 2s infinite;
+        opacity: 0;
+        box-sizing: border-box;
+    }
+
+    span.scroll-icon:nth-of-type(1) {
+        animation-delay: 0s;
+    }
+
+    span.scroll-icon:nth-of-type(2) {
+        bottom: 3rem;
+        animation-delay: .15s;
+    }
+
+    span.scroll-icon:nth-of-type(3) {
+        bottom: 2rem;
+        animation-delay: .3s;
+    }
+}
+
+
+@keyframes scrollDown {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }

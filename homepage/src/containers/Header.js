@@ -1,6 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 import { Container } from 'semantic-ui-react'
+import { Link } from 'react-scroll'
 
 import Navbar from '../components/Navbar'
 
@@ -45,6 +46,12 @@ class Header extends React.Component {
                     customClass={this.state.navbarClass}
                     handleOpenMenu={this.handleOpenMenu}
                 />
+
+                <Link className='scroll' activeClass='active' to='main' spy smooth>
+                    <span className='scroll-icon'></span>
+                    <span className='scroll-icon'></span>
+                    <span className='scroll-icon'></span>Scroll
+                </Link>
             </Container>
         )
     }
