@@ -1,0 +1,43 @@
+#footer {
+    display: flex;
+    flex-direction: column;
+    height: 40em;
+    align-items: center;
+    justify-content: center;
+    background-color: #222225;
+
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+        height: 30em;
+    }
+
+    .about-me, .social-media {
+        width: 17em;
+        height: 15em;
+        margin: -1em;
+
+        @media only screen and (min-width: 768px) {
+            margin: 5em;
+        }
+
+        h4 {
+            color: #fff;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+        }
+
+        span {
+            display: block;
+            color: #ccc;
+            line-height: 1.7em;
+        }
+
+        a {
+            color: #ccc;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
