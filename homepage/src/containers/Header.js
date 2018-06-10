@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
-import { Container } from 'semantic-ui-react'
-import { Link } from 'react-scroll'
+import { Container, Button } from 'semantic-ui-react'
+import { Link, animateScroll } from 'react-scroll'
 
 import Navbar from '../components/Navbar'
 
@@ -9,7 +9,8 @@ import './Header.css'
 
 class Header extends React.Component {
     state = {
-        navbarClass: ''
+        navbarClass: '',
+        showScrollToTopIcon: false
     }
 
     componentDidMount() {
@@ -27,6 +28,12 @@ class Header extends React.Component {
             'small-nav': e.pageY > 0
         })
         this.setState({ navbarClass })
+
+        if (e.pageY > 800) {
+            this.setState({ showScrollToTopIcon: true })
+        } else {
+            this.setState({ showScrollToTopIcon: false })
+        }
     }
 
     handleOpenMenu = (e) => {
@@ -37,6 +44,10 @@ class Header extends React.Component {
             'small-nav': this.state.navbarClass.includes('small-nav')
         })
         this.setState({ navbarClass })
+    }
+
+    scrollToTop = () => {
+        animateScroll.scrollToTop()
     }
 
     render() {
@@ -50,8 +61,19 @@ class Header extends React.Component {
                 <Link className='scroll' activeClass='active' to='main' spy smooth>
                     <span className='scroll-icon'></span>
                     <span className='scroll-icon'></span>
-                    <span className='scroll-icon'></span>Scroll
+                    <span className='scroll-icon'></span>
+                    Scroll
                 </Link>
+
+                <Button
+                    className={classNames('scroll-to-top-icon', {
+                        'hide': !this.state.showScrollToTopIcon
+                    })}
+                    icon='angle up'
+                    size='tiny'
+                    circular={true}
+                    onClick={this.scrollToTop}
+                />    
             </Container>
         )
     }

@@ -52,6 +52,26 @@
         bottom: 2rem;
         animation-delay: .3s;
     }
+
+    button.scroll-to-top-icon {
+        display: block;
+        position: fixed;
+        right: 2rem;
+        bottom: 2rem;
+        background-color: #000;
+        color: #fff;
+        opacity: 1;
+        transition: opacity 1s ease, transform .3s ease;
+
+        &:hover {
+            background-color: #4aacf1;
+            transform: rotate(360deg) scale(1.2);
+        }
+
+        &.hide {
+            opacity: 0;
+        }
+    }
 }
 
 
