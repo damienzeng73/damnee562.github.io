@@ -4,9 +4,9 @@ import { Container } from 'semantic-ui-react'
 
 import Navbar from '../components/Navbar'
 
-import './Main.css'
+import './Header.css'
 
-class Main extends React.Component {
+class Header extends React.Component {
     state = {
         navbarClass: ''
     }
@@ -40,7 +40,7 @@ class Main extends React.Component {
 
     render() {
         return (
-            <Container id='main' fluid>
+            <Container id='header' fluid>
                 <Navbar
                     customClass={this.state.navbarClass}
                     handleOpenMenu={this.handleOpenMenu}
@@ -51,4 +51,4 @@ class Main extends React.Component {
 }
 
 
-export default Main
+export default Header
