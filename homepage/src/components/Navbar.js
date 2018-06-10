@@ -1,6 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
-import { Container, Menu, Icon } from 'semantic-ui-react'
+import { Container, Header, Menu, Icon } from 'semantic-ui-react'
 
 import './Navbar.css'
 
@@ -41,7 +41,7 @@ class Navbar extends React.Component {
             <Container id='navbar'>
                 <Menu className={this.state.customClass} pointing secondary fluid stackable>
                     <Menu.Item header>
-                        <h1>Damien</h1>
+                        <Header as='h1'>Damien</Header>
                         <a className='icon' href={null} onClick={this.handleOpenMenu}>
                             <Icon name='bars' size='large' />
                         </a>
