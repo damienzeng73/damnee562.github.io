@@ -1,31 +1,4 @@
 #navbar {
-    .header {
-        justify-content: space-between;
-
-        h1 {
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-bottom: 0;
-            letter-spacing: .3em;
-
-            @media only screen and (min-width: 768px) {
-                letter-spacing: .5em;
-            }
-        }
-
-        a.icon {
-            color: #000;
-
-            &:hover {
-                cursor: pointer;
-            }
-
-            @media only screen and (min-width: 768px) {
-                display: none;
-            }
-        }
-    }
-
     .stackable.menu {
         padding: .7em;
         transition: padding 0.4s linear;
@@ -36,6 +9,30 @@
 
         .header {
             padding: 0;
+            justify-content: space-between;
+
+            h1 {
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 0;
+                letter-spacing: .3em;
+
+                @media only screen and (min-width: 768px) {
+                    letter-spacing: .5em;
+                }
+            }
+
+            a.icon {
+                color: #000;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                @media only screen and (min-width: 768px) {
+                    display: none;
+                }
+            }
         }
     }
 
