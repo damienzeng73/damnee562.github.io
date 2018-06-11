@@ -7,8 +7,8 @@ import './Footer.css'
 const Footer = () => {
     return (
         <Container id='footer' fluid>
-            <div className='about-me'>
-                <Header as='h4'>About Damien</Header>
+            <div className='contact-me'>
+                <Header as='h4'>Contact Me</Header>
                 <span>3F., No.820, Chunri Rd.</span>
                 <span>Taoyuan Dist., Taoyuan City 330</span>
                 <span>TAIWAN (R.O.C)</span>
