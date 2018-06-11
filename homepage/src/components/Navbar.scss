@@ -1,6 +1,6 @@
 #navbar {
     .stackable.menu {
-        padding-top: 1rem;
+        padding-top: 1.5rem;
         padding-left: .5rem;
         padding-bottom: .5rem;
         transition: padding 0.4s linear;
@@ -19,9 +19,39 @@
                 text-transform: uppercase;
                 margin-bottom: 0;
                 letter-spacing: .3em;
+                cursor: pointer;
 
                 @media only screen and (min-width: 768px) {
                     letter-spacing: .5em;
+                }
+
+                span {
+                    display: inline-block;
+                    animation: bounce 1.5s linear;
+
+                    &:nth-child(1) {
+                        animation-delay: 0s;
+                    }
+
+                    &:nth-child(2) {
+                        animation-delay: .2s;
+                    }
+
+                    &:nth-child(3) {
+                        animation-delay: .4s;
+                    }
+
+                    &:nth-child(4) {
+                        animation-delay: .6s;
+                    }
+
+                    &:nth-child(5) {
+                        animation-delay: .8s;
+                    }
+
+                    &:nth-child(6) {
+                        animation-delay: 1s;
+                    }
                 }
             }
 
@@ -30,6 +60,7 @@
 
                 &:hover {
                     cursor: pointer;
+                    color: #000;
                 }
 
                 @media only screen and (min-width: 768px) {
@@ -49,14 +80,83 @@
         .item {
             color: #fff;
             font-weight: bold;
+            border-bottom: none;
+
+            &:hover {
+                color: #4aacf1;
+            }
         }
     }
 
     .stackable.mobile.menu .right.menu {
         display: flex;
+        margin-top: 1rem;
+        background-color: #222225;
+        animation: stretch .3s linear;
+        z-index: 99;
+
+        .item {
+            height: calc(15rem / 4);
+            animation: show .3s linear;
+        }
     }
 
     .stackable.small-nav.menu {
         padding: 0;
+    }
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+
+    10% {
+        transform: translateY(-30px);
+    }
+
+    15% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(-20px);
+    }
+
+    30% {
+        transform: translateY(0px);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    45% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes stretch {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 15rem;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
