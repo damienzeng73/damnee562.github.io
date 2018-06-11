@@ -1,0 +1,139 @@
+#experience {
+    color: #768390;
+
+    .timeline {
+        line-height: 1.4em;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        h3 {
+            color: #000;
+            line-height: inherit;
+        }
+
+        @media only screen and (min-width: 768px) {
+            display: table;
+
+            &,
+            .timeline-item,
+            .timeline-info,
+            .timeline-marker,
+            .timeline-content {
+                display: block;
+                margin: 0;
+                padding: 0;
+            }
+
+            > .timeline-item:nth-child(odd) .timeline-info {
+                float: left;
+                text-align: right;
+                padding-right: 2rem;
+            }
+
+            > .timeline-item:nth-child(odd) .timeline-content {
+                float: right;
+                text-align: left;
+                padding-left: 2rem;
+            }
+
+            > .timeline-item:nth-child(even) .timeline-info {
+                float: right;
+                text-align: left;
+                padding-left: 2rem;
+            }
+
+            > .timeline-item:nth-child(even) .timeline-content {
+                float: left;
+                text-align: right;
+                padding-right: 2rem;
+            }
+        }
+    }
+
+    .timeline-item {
+        position: relative;
+        padding-left: 2.5rem;
+
+        @media only screen and (min-width: 768px) {
+            padding-bottom: 5rem !important;
+            overflow: hidden;
+        }
+
+        &:first-child {
+            margin-top: 3em;
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+
+            &:after {
+                content: none;
+            }
+        }
+
+        .timeline-info {
+            font-weight: bold;
+            letter-spacing: .1rem;
+            margin: 0 0 .5em 0;
+            text-transform: uppercase;
+            white-space: nowrap;
+
+            @media only screen and (min-width: 768px) {
+                width: 50%;
+            }
+        }
+
+        .timeline-marker {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 15px;
+
+            @media only screen and (min-width: 768px) {
+                left: 50%;
+                margin-left: -7.5px;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 4px;
+                left: 0;
+                display: block;
+                width: 15px;
+                height: 15px;
+                border: 3px solid transparent;
+                border-radius: 100%;
+                background: #FF6B6B;
+                transition: background .3s ease-in-out, border .3s ease-in-out;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 24px;
+                left: 6px;
+                bottom: 0;
+                display: block;
+                width: 3px;
+                background: #CCD5DB;
+            }
+        }
+
+        .timeline-content {
+            padding-bottom: 3em;
+
+            @media only screen and (min-width: 768px) {
+                width: 50%;
+            }
+        }
+    }
+
+    .timeline-item:hover .timeline-marker:before {
+        border: 3px solid #FF6B6B;
+        background: transparent;
+    }
+}
