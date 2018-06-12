@@ -1,0 +1,47 @@
+#skills {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+
+    .picture {
+        background: url('../assets/bg2.jpg') no-repeat center;
+        background-size: cover;
+        width: 100%;
+        height: inherit;
+
+        @media only screen and (min-width: 768px) {
+            width: 50%;
+        }
+    }
+
+    .ability-wrapper {
+        width: 100%;
+        padding: 8rem 5rem;
+        color: #fff;
+        background-color: #222225;
+
+        @media only screen and (min-width: 768px) {
+            width: 50%;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        p {
+            margin-bottom: 5em;
+        }
+
+        span {
+            text-transform: uppercase;
+        }
+
+        .progress:last-child {
+            margin: 1em 0 2.5em;
+        }
+    }
+}
