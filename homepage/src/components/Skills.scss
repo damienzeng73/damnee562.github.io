@@ -8,12 +8,14 @@
     }
 
     .picture {
-        background: url('../assets/bg2.jpg') no-repeat center;
-        background-size: cover;
-        width: 100%;
-        height: inherit;
+//        background: url('../assets/bg2.jpg') no-repeat center;
+//        background-size: cover;
+//        width: 100%;
+//        height: inherit;
 
         @media only screen and (min-width: 768px) {
+            background: url('../assets/bg2.jpg') no-repeat center;
+            background-size: cover;
             width: 50%;
         }
     }
