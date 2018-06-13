@@ -25,11 +25,11 @@ class Header extends React.Component {
         e.preventDefault()
 
         let navbarClass = classNames({
-            'small-nav': e.pageY > 0
+            'small-nav': window.scrollY > 0
         })
         this.setState({ navbarClass })
 
-        if (e.pageY > 800) {
+        if (window.scrollY > 800) {
             this.setState({ showScrollToTopIcon: true })
         } else {
             this.setState({ showScrollToTopIcon: false })
