@@ -2,9 +2,13 @@
     background: linear-gradient(
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.1)
-    ), url('../assets/bg.jpg') no-repeat center fixed;
+    ), url('../assets/bg.jpg') no-repeat center;
     background-size: cover;
     height: 100vh;
+
+    @media only screen and (min-width: 768px) {
+        background-attachment: fixed;
+    }
 
     a.scroll {
         position: absolute;
