@@ -7,7 +7,24 @@ import Footer from '../components/Footer'
 import CC from '../components/CC'
 
 class App extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            loading: true
+        }
+    }
+
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState({ loading: false })
+        }, 1500)
+    }
+
     render() {
+        if (this.state.loading) {
+            return null
+        }
+
         return (
             <Container fluid>
                 <Header />
