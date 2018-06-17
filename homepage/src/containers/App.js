@@ -17,7 +17,7 @@ class App extends React.Component {
     componentDidMount() {
         setTimeout(() => {
             this.setState({ loading: false })
-        }, 1500)
+        }, 2000)
     }
 
     render() {
