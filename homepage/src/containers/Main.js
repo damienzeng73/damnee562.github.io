@@ -3,6 +3,7 @@ import { Container, Divider } from 'semantic-ui-react'
 
 import Experience from '../components/Experience'
 import Skills from '../components/Skills'
+import './Main.css'
 
 class Main extends React.Component {
     render() {
