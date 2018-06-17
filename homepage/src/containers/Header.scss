@@ -66,6 +66,7 @@
         color: #fff;
         opacity: 1;
         transition: opacity 1s ease, transform .3s ease;
+        z-index: 99;
 
         &:hover {
             background-color: #4aacf1;
