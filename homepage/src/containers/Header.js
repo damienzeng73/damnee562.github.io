@@ -65,6 +65,10 @@ class Header extends React.Component {
         this.setState({ navbarClass, hamburgerActive: !this.state.hamburgerActive })
     }
 
+    handleSetActive = () => {
+        this.setState({ hamburgerActive: false })
+    }
+
     scrollToTop = () => {
         animateScroll.scrollToTop()
     }
@@ -76,6 +80,7 @@ class Header extends React.Component {
                     customClass={this.state.navbarClass}
                     hamburgerActive={this.state.hamburgerActive}
                     handleOpenMenu={this.handleOpenMenu}
+                    handleSetActive={this.handleSetActive}
                 />
 
                 <Link className='scroll' activeClass='active' to='main' spy smooth>

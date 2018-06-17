@@ -38,6 +38,7 @@ const Navbar = (props) => {
                         spy={true}
                         smooth={true}
                         name='home'
+                        onSetActive={props.handleSetActive}
                     />
                     <Menu.Item
                         as={Link}
@@ -45,6 +46,7 @@ const Navbar = (props) => {
                         spy={true}
                         smooth={true}
                         name='experience'
+                        onSetActive={props.handleSetActive}
                     />
                     <Menu.Item
                         as={Link}
@@ -52,6 +54,7 @@ const Navbar = (props) => {
                         spy={true}
                         smooth={true}
                         name='skills'
+                        onSetActive={props.handleSetActive}
                     />
                     <Menu.Item
                         as={Link}
@@ -59,6 +62,7 @@ const Navbar = (props) => {
                         spy={true}
                         smooth={true}
                         name='contactMe'
+                        onSetActive={props.handleSetActive}
                     />
                 </Menu.Menu>
             </Menu>

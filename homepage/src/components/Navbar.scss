@@ -94,7 +94,7 @@
         transition: height .3s linear;
 
         .item {
-            opacity: 0;
+            display: none;
             height: calc(15rem / 4);
             transition: opacity .3s linear;
         }
@@ -104,6 +104,7 @@
         height: 15em;
 
         .item {
+            display: block;
             opacity: 1;
         }
     }
