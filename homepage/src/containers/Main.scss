@@ -1,6 +1,10 @@
 #main {
     padding-top: 3em;
 
+    a:hover {
+        color: #FF6B6B;
+    }
+
     @media only screen and (min-width: 768px) {
         padding-top: 5em;
     }
