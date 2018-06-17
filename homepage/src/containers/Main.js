@@ -11,7 +11,9 @@ class Main extends React.Component {
             <Container id='main' fluid>
                 <Experience />
                 <Skills />
-                <Divider hidden />
+                <Divider horizontal>
+                    <a href='https://drive.google.com/file/d/1H5RMRjwAet3_QN03WIgR2ht4g4lvRHkp/view?usp=sharing' target='_blank' rel='noopener noreferrer'>Want to know more about me ?</a>
+                </Divider>
             </Container>
         )
     }
