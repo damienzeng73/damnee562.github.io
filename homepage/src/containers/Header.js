@@ -9,23 +9,30 @@ import './Header.css'
 
 class Header extends React.Component {
     state = {
-        navbarClass: '',
+        navbarClass: 'mobile',
         showScrollToTopIcon: false
     }
 
     componentDidMount() {
         window.addEventListener('scroll', this.handleOnScroll)
+        window.addEventListener('resize', this.handleOnResize)
+
+        if (window.innerWidth > 768) {
+            this.setState({ navbarClass: '' })
+        }
     }
 
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleOnScroll)
+        window.removeEventListener('resize', this.handleOnResize)
     }
 
     handleOnScroll = (e) => {
         e.preventDefault()
 
         let navbarClass = classNames({
-            'small-nav': window.scrollY > 0
+            'small-nav': window.scrollY > 0,
+            'mobile': this.state.navbarClass.includes('mobile')
         })
         this.setState({ navbarClass })
 
@@ -36,11 +43,22 @@ class Header extends React.Component {
         }
     }
 
+    handleOnResize = (e) => {
+        e.preventDefault()
+
+        let navbarClass = classNames({
+            'mobile': window.innerWidth <= 768,
+            'small-nav': this.state.navbarClass.includes('small-nav')
+        })
+        this.setState({ navbarClass })
+    }
+
     handleOpenMenu = (e) => {
         e.preventDefault()
 
         let navbarClass = classNames({
-            'mobile': !this.state.navbarClass.includes('mobile'),
+            'open': !this.state.navbarClass.includes('open'),
+            'mobile': this.state.navbarClass.includes('mobile'),
             'small-nav': this.state.navbarClass.includes('small-nav')
         })
         this.setState({ navbarClass })
