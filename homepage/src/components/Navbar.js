@@ -1,10 +1,16 @@
 import React from 'react'
-import { Container, Header, Menu, Icon } from 'semantic-ui-react'
+import { Container, Header, Menu } from 'semantic-ui-react'
 import { Link } from 'react-scroll'
+import classNames from 'classnames'
 
 import './Navbar.css'
+import '../assets/hamburgers.css'
 
 const Navbar = (props) => {
+    const hamburgerClass = classNames('hamburger', 'hamburger--emphatic', {
+        'is-active': props.hamburgerActive
+    })
+
     return (
         <Container id='navbar'>
             <Menu className={props.customClass} pointing secondary fluid stackable>
@@ -17,9 +23,12 @@ const Navbar = (props) => {
                         <span>e</span>
                         <span>n</span>
                     </Header>
-                    <a className='icon' href={null} onClick={props.handleOpenMenu}>
-                        <Icon name='bars' size='large' />
-                    </a>
+
+                    <button className={hamburgerClass} type='button' onClick={props.handleOpenMenu}>
+                        <span className='hamburger-box'>
+                            <span className='hamburger-inner'></span>
+                        </span>
+                    </button>
                 </Menu.Item>
 
                 <Menu.Menu position='right'>

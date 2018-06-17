@@ -55,14 +55,7 @@
                 }
             }
 
-            a.icon {
-                color: #fff;
-
-                &:hover {
-                    cursor: pointer;
-                    color: #000;
-                }
-
+            button.hamburger {
                 @media only screen and (min-width: 768px) {
                     display: none;
                 }

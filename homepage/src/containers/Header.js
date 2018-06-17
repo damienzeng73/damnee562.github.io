@@ -10,6 +10,7 @@ import './Header.css'
 class Header extends React.Component {
     state = {
         navbarClass: 'mobile',
+        hamburgerActive: false,
         showScrollToTopIcon: false
     }
 
@@ -61,7 +62,7 @@ class Header extends React.Component {
             'mobile': this.state.navbarClass.includes('mobile'),
             'small-nav': this.state.navbarClass.includes('small-nav')
         })
-        this.setState({ navbarClass })
+        this.setState({ navbarClass, hamburgerActive: !this.state.hamburgerActive })
     }
 
     scrollToTop = () => {
@@ -73,6 +74,7 @@ class Header extends React.Component {
             <Container id='header' fluid>
                 <Navbar
                     customClass={this.state.navbarClass}
+                    hamburgerActive={this.state.hamburgerActive}
                     handleOpenMenu={this.handleOpenMenu}
                 />
 
