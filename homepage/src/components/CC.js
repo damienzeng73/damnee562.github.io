@@ -7,8 +7,9 @@ const CC = () => {
     return (
         <Container id='cc' fluid>
             <span>
+                Copyright 
                 <Icon name='copyright' />
-                 2018 Damien Zeng. All rights reserved.
+                 2018 Damien Zeng
             </span>
         </Container>
     )
