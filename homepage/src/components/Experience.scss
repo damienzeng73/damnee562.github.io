@@ -65,7 +65,7 @@
         &:last-child {
             padding-bottom: 0;
 
-            &:after {
+            &::after {
                 content: none;
             }
         }
@@ -94,7 +94,7 @@
                 margin-left: -7.5px;
             }
 
-            &:before {
+            &::before {
                 content: "";
                 position: absolute;
                 top: 4px;
@@ -108,7 +108,7 @@
                 transition: background .3s ease-in-out, border .3s ease-in-out;
             }
 
-            &:after {
+            &::after {
                 content: "";
                 position: absolute;
                 top: 24px;
@@ -129,7 +129,7 @@
         }
     }
 
-    .timeline-item:hover .timeline-marker:before {
+    .timeline-item:hover .timeline-marker::before {
         border: 3px solid #FF6B6B;
         background: transparent;
     }
