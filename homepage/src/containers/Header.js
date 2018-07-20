@@ -85,8 +85,6 @@ class Header extends React.Component {
 
                 <Link className='scroll' activeClass='active' to='main' spy smooth>
                     <span className='scroll-icon'></span>
-                    <span className='scroll-icon'></span>
-                    <span className='scroll-icon'></span>
                     Scroll
                 </Link>
 

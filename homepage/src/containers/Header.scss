@@ -31,30 +31,27 @@
     span.scroll-icon {
         position: absolute;
         left: 50%;
-        bottom: 4rem;
-        width: 24px;
-        height: 24px;
-        margin-left: -12px;
-        border-left: 2px solid #fff;
-        border-bottom: 2px solid #fff;
-        transform: rotate(-45deg);
-        animation: scrollDown 2s infinite;
-        opacity: 0;
-        box-sizing: border-box;
-    }
-
-    span.scroll-icon:nth-of-type(1) {
-        animation-delay: 0s;
-    }
-
-    span.scroll-icon:nth-of-type(2) {
-        bottom: 3rem;
-        animation-delay: .15s;
-    }
-
-    span.scroll-icon:nth-of-type(3) {
         bottom: 2rem;
-        animation-delay: .3s;
+        width: 30px;
+        height: 50px;
+        margin-left: -15px;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        box-sizing: border-box;
+
+        &::before {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            content: '';
+            width: 6px;
+            height: 6px;
+            margin-left: -3px;
+            background-color: #fff;
+            border-radius: 100%;
+            animation: scrollDown 2s infinite;
+            box-sizing: border-box;
+        }
     }
 
     button.scroll-to-top-icon {
@@ -83,10 +80,16 @@
 @keyframes scrollDown {
     0% {
         opacity: 0;
+        transform: translate(0, 0);
     }
 
-    50% {
+    40% {
         opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+        transform: translate(0, 20px);
     }
 
     100% {
